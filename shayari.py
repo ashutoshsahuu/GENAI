@@ -19,7 +19,7 @@ if st.button("Get Result"):
         completion = client.chat.completions.create(
             model="gpt-4o-mini",
             messages=[
-                {"role": "system", "content": "Create Shayari depend on the words useer will give in both english and hindi"},
+                {"role": "system", "content": "Create Shayari depend on the words user will give in both english and hindi"},
                 {"role": "user", "content": user_input}
             ]
         )
